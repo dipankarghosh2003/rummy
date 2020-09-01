@@ -78,7 +78,7 @@ $(document).ready(function(){
             $(this).hide();
             $("#game-area #dropperarearound4").show();
             $("#game-area #cursor2").animate({left:"260px"},50)
-            $("#game-area #topc33 img").attr("src","./assets/screen3/c3h.png");
+            $("#game-area #topc33 img").attr("src","./assets/screen3/c3s.png");
             $("#game-area #card31").hide();
            
 
