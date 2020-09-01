@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!-- <meta name="viewport" content="width=320, user-scalable=0" id="viewport"/> -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimal-ui" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <header name = "Access-Control-Allow-Origin" value = "*" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="style.js"></script>
+</head>
+<body>
+    <div class="main-class" id="game-area">
+        <div id="page1" class="page">
+            <div id="headermsg">
+                <img src="assets/screen1/intromsg.png" alt="">
+            </div>
+            <div id="playnow">
+                <img src="assets/screen1/playnowbtn.png" alt="">
+            </div>
+            <div id="round1bararea">
+                <div id="round-dash">
+                    <img src="assets/screen1/round1label.png" alt="">
+                </div>
+                
+            </div>
+            <div id="greenmsgbox">
+                <div id="pickthecorrect"><img src="assets/screen1/pickthecorrect.png" alt=""></div>
+            </div>
+            <div id="bottomcardsarea">
+               
+                <section class="container" id="card1">
+                    <div class="carddef">
+                      <div class="front"><img src="assets/cardfront.png" alt=""></div>
+                      <div class="back"><img src="assets/screen1/card6.png" alt=""></div>
+                    </div>
+                </section>
+                <section class="container" id="card2">
+                    <div class="carddef" >
+                      <div class="front"><img src="assets/cardfront.png" alt=""></div>
+                      <div class="back"><img src="assets/screen1/card8.png" alt=""></div>
+                    </div>
+                </section>
+                <section class="container" id="card3">
+                    <div class="carddef">
+                      <div class="front"><img src="assets/cardfront.png" alt=""></div>
+                      <div class="back"><img src="assets/screen1/card7d.png" alt=""></div>
+                    </div>
+                </section>
+                <section class="container" id="card4">
+                    <div class="carddef">
+                      <div class="front"><img src="assets/cardfront.png" alt=""></div>
+                      <div class="back"><img src="assets/screen1/card7.png" alt=""></div>
+                    </div>
+                </section>
+                
+            </div>
+            <div id="topcardcontainer">
+                <div id="topc1" class="topc">
+                    <img src="assets/screen1/topc1.png" alt="">
+                </div>
+                <div id="topc2" class="topc">
+                    <img src="assets/screen1/topc2.png" alt="">
+                </div>
+                <div id="topc3" class="topc">
+                    <img src="assets/screen1/topc3.png" alt="">
+                </div>
+                <div id="topc4" class="topc">
+                    <img src="assets/screen1/cardq.png" alt="">
+                </div>
+            </div>
+            <div id="cursor">
+                <img src="assets/hand.png" alt="">
+            </div>
+            <div id="dropperarea" class="ui-widget-header">
+
+            </div>
+            <div id="round1winmsgarea">
+                <div id="topwimsg">
+                    <img src="assets/screen1/round1won.png" alt="">
+                </div>
+                 <div id="card1container">
+                    <img src="assets/screen1/cardfront.png" alt="">
+                </div>
+                <div id="confetti">
+                    <img src="assets/screen1/confetti.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="page2" class="page">
+            <div id="round1winmsgareap2">
+                <div id="topwimsg2">
+                    <img src="assets/screen1/round1won.png" alt="">
+                </div>
+                
+                
+            </div>
+            <div id="greenmsgbox1">
+                <div id="pickthecorrecttip2"><img src="assets/screen2/round2tip.png" alt=""></div>
+            </div>
+            <div id="bottomcardsarea2">
+               
+                <section class="container" id="card21">
+                    <div class="carddef">
+                      <div class="front"><img src="assets/cardfront.png" alt=""></div>
+                      <div class="back"><img src="assets/screen2/c8dimond.png" alt=""></div>
+                    </div>
+                </section>
+                <section class="container" id="card22">
+                    <div class="carddef" >
+                      <div class="front"><img src="assets/cardfront.png" alt=""></div>
+                      <div class="back"><img src="assets/screen1/card8.png" alt=""></div>
+                    </div>
+                </section>
+                <section class="container" id="card23">
+                    <div class="carddef">
+                      <div class="front"><img src="assets/cardfront.png" alt=""></div>
+                      <div class="back"><img src="assets/screen1/card7d.png" alt=""></div>
+                    </div>
+                </section>
+                <section class="container" id="card24">
+                    <div class="carddef">
+                      <div class="front"><img src="assets/cardfront.png" alt=""></div>
+                      <div class="back"><img src="assets/screen1/card7.png" alt=""></div>
+                    </div>
+                </section>
+                
+            </div>
+
+            <div id="topcardcontainer1">
+                <div id="topc21" class="topc">
+                    <img src="assets/screen2/c8s.png" alt="">
+                </div>
+                <div id="topc22" class="topc">
+                    <img src="assets/screen1/card8.png" alt="">
+                </div>
+                <div id="topc23" class="topc">
+                    <img src="assets/screen2/c8club.png" alt="">
+                </div>
+                <div id="topc24" class="topc">
+                    <img src="assets/screen1/cardq.png" alt="">
+                </div>
+            </div>
+
+            <div id="cursor1">
+                <img src="assets/hand.png" alt="">
+            </div>
+            <div id="dropperarearound2" class="ui-widget-header"></div>
+
+            <div id="round2winmsgarea">
+                <div id="topwimsg3">
+                    <img src="assets/screen2/round2won.png" alt="">
+                </div>
+                 <div id="card2container">
+                    <img src="assets/screen1/cardfront.png" alt="">
+                </div>
+                <div id="confetti2">
+                    <img src="assets/screen1/confetti.png" alt="">
+                </div>
+            </div>
+           
+        </div>
+        <div id="page3" class="page">
+            <div id="round2winmsgareap3">
+                <div id="topwimsg4">
+                    <img src="assets/screen2/round2won.png" alt="">
+                </div>
+            </div>
+            <div id="greenmsgbox2">
+                <div id="pickthecorrecttip3"><img src="assets/screen3/round3tip.png" alt=""></div>
+            </div>
+            <div id="bottomcardsarea3">
+               
+                <section class="container" id="card31">
+                    <div class="carddef">
+                      <div class="front"><img src="assets/cardfront.png" alt=""></div>
+                      <div class="back"><img src="assets/screen3/c3s.png" alt=""></div>
+                    </div>
+                </section>
+                <section class="container" id="card32">
+                    <div class="carddef" >
+                      <div class="front"><img src="assets/cardfront.png" alt=""></div>
+                      <div class="back"><img src="assets/screen3/c3h.png" alt=""></div>
+                    </div>
+                </section>
+                <section class="container" id="card33">
+                    <div class="carddef">
+                      <div class="front"><img src="assets/cardfront.png" alt=""></div>
+                      <div class="back"><img src="assets/screen3/cqc.png" alt=""></div>
+                    </div>
+                </section>
+                <section class="container" id="card34">
+                    <div class="carddef">
+                      <div class="front"><img src="assets/cardfront.png" alt=""></div>
+                      <div class="back"><img src="assets/screen3/cjs.png" alt=""></div>
+                    </div>
+                </section>
+                
+            </div>
+
+            <div id="topcardcontainer2">
+                <div id="topc31" class="topc">
+                    <img src="assets/screen3/cas.png" alt="">
+                </div>
+                <div id="topc32" class="topc">
+                    <img src="assets/screen3/c2s.png" alt="">
+                </div>
+                <div id="topc33" class="topc">
+                    <img src="assets/screen1/cardq.png" alt="">
+                </div>
+                <div id="topc34" class="topc">
+                    <img src="assets/screen3/c4s.png" alt="">
+                </div>
+                <div id="topc35" class="topc">
+                    <img src="assets/screen3/cjh.png" alt="">
+                </div>
+                <div id="topc36" class="topc">
+                    <img src="assets/screen3/cjd.png" alt="">
+                </div>
+                <div id="topc37" class="topc">
+                    <img src="assets/screen3/cjs.png" alt="">
+                </div>
+                <div id="topc38" class="topc">
+                    <img src="assets/screen1/cardq.png" alt="">
+                </div>
+            </div>
+            <div id="cursor2">
+                <img src="assets/hand.png" alt="">
+            </div>
+
+            <div id="dropperarearound3" class="ui-widget-header"></div>
+            <div id="dropperarearound4" class="ui-widget-header"></div>
+
+            <div id="round3winmsgarea">
+                <div id="topwimsg5">
+                    <img src="assets/screen3/congratsmsg.png" alt="">
+                </div>
+                 <div id="card3container">
+                    <img src="assets/screen1/cardfront.png" alt="">
+                </div>
+                <div id="confetti3">
+                    <img src="assets/screen1/confetti.png" alt="">
+                </div>
+            </div>
+    </div>
+        
+</body>
+</html>
