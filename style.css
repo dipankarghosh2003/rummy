@@ -74,8 +74,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 #game-area #dropperarea{
     border: 0px solid red;
-    width: 56px;
-    height: 71px;
+    width: 82px;
+    height: 86px;
     position: absolute;
     left: 174px;
     top: 98px;
@@ -150,7 +150,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     width: 30px;
     position: absolute;
     right:11px;
-    top: 267px;
+    top: 292px;
     animation: handanim 1s linear infinite;
     display: none;
     z-index: 11;
@@ -162,7 +162,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     width: 30px;
     position: absolute;
     left: 30px;
-    top: 267px;
+    top: 292px;
     animation: handanim 1s linear infinite;
     display: none;
     z-index: 11;
@@ -171,7 +171,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     width: 30px;
     position: absolute;
     left: 30px;
-    top: 267px;
+    top: 292px;
     animation: handanim 1s linear infinite;
     display: none;
     z-index: 14;
@@ -180,8 +180,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     width: 100%;
 }
 @keyframes handanim{
-    0%   {top: 267px;}
-    50%  {top: 253px;}
+    0%   {top: 292px;}
+    50%  {top: 315px;}
     
 }
 #game-area #game1won{
@@ -438,8 +438,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 #game-area #dropperarearound2{
     border: 0px solid red;
-    width: 56px;
-    height: 71px;
+    width: 82px;
+    height: 86px;
     position: absolute;
     left: 174px;
     top: 98px;
@@ -448,8 +448,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 #game-area #dropperarearound3 {
     border: 0px solid red;
-    width: 56px;
-    height: 71px;
+    width: 82px;
+    height: 86px;
     position: absolute;
     left: 82px;
     top: 92px;
@@ -458,8 +458,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 #game-area #dropperarearound4 {
     border: 0px solid red;
-    width: 56px;
-    height: 71px;
+    width: 82px;
+    height: 86px;
     position: absolute;
     left: 235px;
     top: 120px;
