@@ -74,12 +74,14 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 #game-area #dropperarea{
     border: 0px solid red;
-    width: 82px;
-    height: 86px;
+    width: 109px;
+    height: 124px;
     position: absolute;
-    left: 174px;
-    top: 98px;
+    left: 152px;
+    top: 70px;
     transform: rotate(19deg);
+    -ms-transform: rotate(19deg);
+    -webkit-transform: rotate(19deg); ;
     display: none;
 }
 #game-area .card img{
@@ -438,32 +440,40 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 #game-area #dropperarearound2{
     border: 0px solid red;
-    width: 82px;
-    height: 86px;
+    width: 104px;
+    height: 107px;
     position: absolute;
-    left: 174px;
-    top: 98px;
+    left: 149px;
+    top: 75px;
     transform: rotate(19deg);
+    -ms-transform: rotate(19deg);;
+    -webkit-transform: rotate(19deg);;
     display: none;
 }
 #game-area #dropperarearound3 {
     border: 0px solid red;
-    width: 82px;
-    height: 86px;
+    width: 95px;
+    height: 102px;
     position: absolute;
-    left: 82px;
-    top: 92px;
+    left: 65px;
+    top: 74px;
+    z-index: 999;
     transform: rotate(-14deg);
+    -ms-transform: rotate(-14deg);
+    -webkit-transform:rotate(-14deg) ;
     display: none;
 }
 #game-area #dropperarearound4 {
     border: 0px solid red;
-    width: 82px;
-    height: 86px;
+    width: 114px;
+    height: 101px;
     position: absolute;
-    left: 235px;
-    top: 120px;
+    left: 209px;
+    top: 94px;
+    z-index: 999;
     transform: rotate(31deg);
+    -ms-transform: rotate(31deg);
+    -webkit-transform: rotate(31deg);
     display: none;
 }
 
