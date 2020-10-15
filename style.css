@@ -1,3 +1,7 @@
+@font-face {
+    font-family: BarlowBold;
+    src: url(assets/Barlow-Bold.otf);
+  }
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
     margin: 0;
     padding: 0;
@@ -5,6 +9,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     outline: 0;
     font-size: 100%;
     background: transparent;
+    font-family: BarlowBold;
 }
 #gamearea{
     width:100%;
@@ -38,172 +43,120 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     position: absolute;top:0;
     /*font-family:HelveticaNeue Medium; */
 }
+#game-area #page2{
+    display: none;
+    background:url(./assets/finalscreen.jpg);
+    background-size: 100%;
+}
+#game-area .messagearea{
+    position: absolute;
+    top: 60px;
+    width: 100%;
+}
+#game-area .msg{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: BarlowBold;
+    opacity:0
+}
+#game-area .msg1{
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Arial;
+    margin: 0 auto;
+}
+#game-area .msg3{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: BarlowBold;
+    margin:0 auto;
+    margin-top: 14px;
+}
+#game-area .msg2{
+    color: #ffffff;
+    font-size: 25px;
+    font-family: BarlowBold;
+    display: none;opacity: 0;
+}
 #game-area #page1{
     display: block;
    
 }
-#game-area #page1 img{
-    width: 100%;
-}
-#game-area #page2 img{
-    width: 100%;
-}
-#game-area #page2{
-    display: none;
-    
-}
-#game-area #page3 img{
-    width: 100%;
-}
-#game-area #page3{
-    display: none;
-    
-}
-#game-area #introscreen img{
-    width: 100%;
-}
-#game-area #introscreen{
-    width: 100%;;
-}
-#game-area #game1area{
-    display: none;
-    width: 100%;
-    background-image: url('./assets/round1scene2.jpg');
-    height: 342px;
-    background-size: 100% 100%;
-}
-#game-area #dropperarea{
-    border: 0px solid red;
-    width: 109px;
-    height: 124px;
-    position: absolute;
-    left: 152px;
-    top: 70px;
-    transform: rotate(19deg);
-    -ms-transform: rotate(19deg);
-    -webkit-transform: rotate(19deg); ;
-    display: none;
-}
-#game-area .card img{
-    width: 100%;
-}
-#game-area #card1 {
-    width: 57px;
-    left: 136px;
-}
-#game-area #bottomcard {
-    position: relative;
-    top: 229px;
-    margin: 0 auto;
-    width: 270px;
-    border: 0px solid red;
-}
-#game-area #card2 {
-    width: 57px;
-    position: absolute;
-    top: 0;
-    left: 135px;
-}
-#game-area #card3 {
-    width: 57px;
-    position: absolute;
-    top: 0;
-    left: 136px;
-}
-#game-area #card4 {
-    width: 57px;
-    position: absolute;
-    top: 0;
-    right: 128px;
-}
-#game-area .round1card3anim{
-    width: 57px !important;
-    position: absolute;
-    top: 0;
-    transform: rotate(21deg);
-    
-    left: 189px !important;
-    top: -123px !important;
-}
-#game-area #messagearea {
-    position: relative;
-    top: 34px;
-    margin: 0 9%;
-}
-#game-area #messagearea img{
-    width: 100%;
-}
-#game-area #intro1{
-    display: block;
-    position: absolute;
-    left:0
-}
-#game-area #intro2{
-    display: none;
-    position: absolute;
-    left:0
-}
-#game-area #seq1{
-    display: none;
-    position: absolute;
-    left:0
-}
-#game-area #cursor {
-    width: 30px;
-    position: absolute;
-    right:11px;
-    top: 292px;
-    animation: handanim 1s linear infinite;
-    display: none;
-    z-index: 11;
-}
-#game-area #cursor img{
-    width: 100%;
-}
-#game-area #cursor1 {
-    width: 30px;
-    position: absolute;
-    left: 30px;
-    top: 292px;
-    animation: handanim 1s linear infinite;
-    display: none;
-    z-index: 11;
-}
-#game-area #cursor2 {
-    width: 30px;
-    position: absolute;
-    left: 30px;
-    top: 292px;
-    animation: handanim 1s linear infinite;
-    display: none;
-    z-index: 14;
-}
-#game-area #cursor1 img, #game-area #cursor2 img {
-    width: 100%;
-}
-@keyframes handanim{
-    0%   {top: 292px;}
-    50%  {top: 315px;}
-    
-}
-#game-area #game1won{
-    display: none;
-}
-#game-area #game1won img{
-    width: 100%;
-}
 
+#game-area .gamearea {
+    border: 1px solid red;
+    width: 100%;
+    position: absolute;
+    top: 150px;
+    height: 190px;
+}
+.main-class #pileofcard{
+    position: absolute;
+    top: 58px;
+    left: 127px;
+    background-image: url('./assets/card-deck-back.png');
+    background-size: 100%;
+
+}
 .main-class .container {
-    width: 57px;
-    height: auto;
+    width: 66px;
+    height: 60px;
     position: relative;
     border: 0px solid #ccc;
     -webkit-perspective: 800px;
     -moz-perspective: 800px;
     -o-perspective: 800px;
     perspective: 800px;
+    
 }
- .main-class .carddef {
+.main-class #correctcard img{
+    width: 100%;
+    /* box-shadow: -1px 3px 9px 2px white; */
+    animation: cardglow 1s repeat ;
+    -webkit-animation: cardglow 1s infinite;
+    
+}
+.glowCards{
+    animation: cardglow 1s repeat ;
+}
+@keyframes cardglow{
+    0% {
+        box-shadow: 0px 1px 2px 5px #f6ec62;
+        border-radius: 5px;
+    }
+    100%{
+        box-shadow: none
+    }
+}
+
+.main-class #correctcard{
+    width: 43px;
+    left: 162px;
+    position: absolute;
+    top: 7px;
+    opacity: 0;
+    z-index: 999;
+    
+}
+.main-class #invalidcard{
+    width: 43px;
+    left: 162px;
+    position: absolute;
+    top: 7px;
+    display: none;
+    z-index: 999;
+    
+}
+.main-class #invalidcard img{
+    width: 100%;
+    b
+    
+}
+
+.main-class .carddef {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -216,6 +169,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     -o-transform-style: preserve-3d;
     transform-style: preserve-3d;
     -webkit-transform-origin: 50% 50%;
+}
+.main-class .carddef img{
+    width: 100%;
 }
  .main-class .carddef div {
     display: block;
@@ -249,329 +205,190 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     transform: rotateY( 180deg );
 }
 
-
-
-#game-area #headermsg {
-    position: absolute;
-    width: 250px;
-    left: 35px;
-    top: 60px;
-}
-#game-area #playnow {
-    position: absolute;
-    top: 193px;
-    width: 165px;
-    left: 78px;
-    margin: 0 auto;
-    z-index: 99;
-}
-#game-area #bottomcardsarea {
+#game-area #bottomcardcontainer {
     width: 100%;
     position: absolute;
-    top: 220px;
-    opacity: 0;
-    z-index: 11;
+    top: 200px;
+    opacity: 1;
 }
-#game-area #card1container, #game-area #card2container, #game-area #card3container {
-    position: absolute;
-    width: 57px;
-    margin: 0 auto;
-    top: 240px;
-    left: 133px;opacity: 0;
-}
-#game-area #round1bararea {
-    position: absolute;
-    top: 186px;
-    width: 100%;
-    opacity: 0;
-}
-#game-area #round-dash {
-    position: relative;
-    margin: 0 auto;
-    width: 200px;
-}
-#game-area #topcardcontainer, #game-area #topcardcontainer1, #game-area #topcardcontainer2 {
-    width: 100%;
-    position: absolute;
-    top: 80px;
-    opacity: 0;
-}
-
 #game-area .topc {
-    width: 57px;
+    width: 84px;
     position: absolute;
     /* margin: 0 auto; */
     left: 131px;
     top:0px;
 }
-#game-area #greenmsgbox {
-    position: absolute;
-    top: 38px;
+
+#game-area .topc img{
     width: 100%;
-    opacity: 0;
 }
-#game-area #pickthecorrect {
-    position: relative;
-    top: 0;
-    width: 250px;
-    margin: 0 auto;
+/* #game-area #topc1 {
+    left: 66px;
+    transform: rotate(-20deg);
+    top: 7px;
 }
-#game-area #round1winmsgarea, #game-area #round1winmsgareap2, #game-area #round2winmsgarea,#game-area #round2winmsgareap3, #game-area #round3winmsgarea {
+#game-area #topc2 {
+    left: 102px;
+    transform: rotate(-7deg);
+    top: 3px;
+}
+#game-area #topc3 {
+    left: 140px;
+    transform: rotate(1deg);
+    top: 5px;
+}
+#game-area #topc4 {
+    left: 175px;
+    transform: rotate(14deg);
+    top: 15px;
+} */
+
+.animateCards{
+    animation: cardpileanim 1s forwards ;
+}
+@keyframes cardpileanim{
+    0% {
+        width:66px
+    }
+    100%{
+        width:44px;
+    }
+}
+#game-area .containerglow{
+    /* box-shadow: -1px 3px 9px 2px white; */
+    border-radius: 6px;
+}
+#game-area .animateIncorrectCard{
+    box-shadow: 0px 0px 2px 3px #52ff6a;
+    border-radius: 6px;
+    animation: cardglow1 1s infinite ;
+
+}
+@keyframes cardglow1{
+    0% {
+        box-shadow:  0px 1px 11px 5px #f6ec62
+    }
+    100%{
+        box-shadow: none
+    }
+}
+#game-area #clickableareaforinvalidcard {
+    border: 0px solid red;
+    height: 100px;
+    z-index: 9999;
     position: absolute;
-    top: 0;
-    width: 100%;display: none;
+    right: 41px;
+    width: 115px;
+    display: none;
 }
-#game-area #topwimsg {
-    position: relative;
-    top: 70px;
-    opacity: 0;
-    width: 260px;
-    margin: 0 auto;
-}
-#game-area #confetti, #game-area #confetti2, #game-area #confetti3 {
+#game-area #confetti3 {
     position: absolute;
-    top: 0;
+    top: 0px;
     width: 100%;
     transform: scale(0.0);
 }
+#game-area #confetti3 img{
+    width: 100%;
+}
+#game-area #confetti4 {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    transform: scale(0.0);
+}
+#game-area #confetti4 img{
+    width: 100%;
+}
 #game-area .animateConfetti{
-    animation: confanim 1.5s linear 1 ;
+    animation: confanim 12s linear 1 ;
 }
 @keyframes confanim{
     0% {
         transform: scale(0.0);
     }
     100%{
-        transform: scale(1)
+        transform: scale(2)
     }
 }
-#game-area #topwimsg2, #game-area #topwimsg3, #game-area #topwimsg4, #game-area #topwimsg5 {
-    position: relative;
-    top: 60px;
-    width: 260px;
-    margin: 0 auto;
+
+#game-area .animateConfetti1{
+    animation: confanim1 2s forwards ;
 }
-#game-area #card1container2 {
+@keyframes confanim1{
+    0% {
+        transform: scale(0.0);
+    }
+    100%{
+        transform: scale(1.8)
+    }
+}
+
+#game-area #money img{
+    width: 100%;
+}
+#game-area #money {
+    width: 100%;
     position: absolute;
-    width: 57px;
-    margin: 0 auto;
-    top: 220px;
-    left: 133px;
+    top: 320px;
+    display: none;
 }
-#game-area #greenmsgbox1 {
+#game-area #currencyimg {
+    position: relative;
+    margin: 0 auto;
+    width: 168px;
+}
+#game-area #money {
+    width: 100%;
+    position: absolute;
+    top: 320px;
+}
+#game-area #coins {
+    width: 100%;
+}
+#game-area #coins img{
+    width: 100%;
+}
+#game-area .messagearea1{
     position: absolute;
     top: 38px;
     width: 100%;
-    opacity: 0;
 }
-#game-area #greenmsgbox2 {
+#game-area #showhand {
     position: absolute;
-    top: 38px;
-    width: 100%;
-    opacity: 0;
-}
-#game-area #pickthecorrecttip2, #game-area #pickthecorrecttip3 {
-    position: relative;
-    top: 0;
-    width: 250px;
+    width: 50px;
     margin: 0 auto;
+    left: 70px;
+    top: 32px;
+    z-index: 9999999;
+    display: none;
 }
-#game-area #bottomcardsarea2 {
+#game-area #showhand img{
     width: 100%;
-    position: absolute;
-    top: 220px;
-    opacity: 1;
-    z-index: 11;
-}
-#game-area #bottomcardsarea3 {
-    width: 100%;
-    position: absolute;
-    top: 220px;
-    opacity: 1;
-    z-index: 13;
-}
-#game-area #card21 {
-    width: 57px;
-    left: 136px;
-}
-
-#game-area #card22 {
-    width: 57px;
-    position: absolute;
-    top: 0;
-    left: 135px;
-}
-#game-area #card23 {
-    width: 57px;
-    position: absolute;
-    top: 0;
-    left: 136px;
-}
-#game-area #card24 {
-    width: 57px;
-    position: absolute;
-    top: 0;
-    right: 128px;
-}
-
-#game-area #card31 {
-    width: 57px;
-    left: 136px;
-}
-
-#game-area #card32 {
-    width: 57px;
-    position: absolute;
-    top: 0;
-    left: 135px;
-}
-#game-area #card33 {
-    width: 57px;
-    position: absolute;
-    top: 0;
-    left: 136px;
-}
-#game-area #card34 {
-    width: 57px;
-    position: absolute;
-    top: 0;
-    right: 128px;
-}
-
-#game-area #dropperarearound2{
-    border: 0px solid red;
-    width: 104px;
-    height: 107px;
-    position: absolute;
-    left: 149px;
-    top: 75px;
-    transform: rotate(19deg);
-    -ms-transform: rotate(19deg);;
-    -webkit-transform: rotate(19deg);;
-    display: none;
-}
-#game-area #dropperarearound3 {
-    border: 0px solid red;
-    width: 95px;
-    height: 102px;
-    position: absolute;
-    left: 65px;
-    top: 74px;
-    z-index: 999;
-    transform: rotate(-14deg);
-    -ms-transform: rotate(-14deg);
-    -webkit-transform:rotate(-14deg) ;
-    display: none;
-}
-#game-area #dropperarearound4 {
-    border: 0px solid red;
-    width: 114px;
-    height: 101px;
-    position: absolute;
-    left: 209px;
-    top: 94px;
-    z-index: 999;
-    transform: rotate(31deg);
-    -ms-transform: rotate(31deg);
-    -webkit-transform: rotate(31deg);
-    display: none;
-}
-
-#game-area .round2card2anim{
-    width: 57px !important;
-    position: absolute;
-    top: 0;
-    transform: rotate(21deg);
     
-    left: 189px !important;
-    top: -123px !important;
 }
-#game-area .round3card2anim{
-    width: 57px !important;
-    position: absolute;
-    top: 0;
-    transform: rotate(-13deg);
-    left: 73px !important;
-    top: -127px !important;
+/* #game-area .showhandanim{
+    animation: handanim 3s forwards ;
 }
-#game-area .round4card4anim{
-    width: 57px !important;
-    position: absolute;
-    top: 0;
-    transform: rotate(31deg);
-    left: 254px !important;
-    top: -96px !important;
-}
-/* #topc31 {
-    transform: rotate(-35deg);
-    left: 27px;
-    top: 21px;
-}
-#topc32{
-    transform: rotate(-23deg);
-    left: 51px;
-    top: 8px;
 
-}
-#topc33{
-    transform: rotate(-14deg);
-    left: 75px;
-    top: 2px;
-}
-#topc34{
-    transform: rotate(-5deg);
-    left: 101px;
-    top: 0px;
-}
-#topc35 {
-    transform: rotate(0deg);
-    left: 122px;
-    top: 0px;
-}
-#topc36 {
-    transform: rotate(8deg);
-    left: 141px;
-    top: 5px;
-}
-#topc37 {
-    transform: rotate(15deg);
-    left: 161px;
-    top: 11px;
-}
-#topc38 {
-    transform: rotate(27deg);
-    left: 180px;
-    top: 22px;
+@keyframes handanim{
+    0% {
+        opacity: 0;
+        top:32px;
+    }
+    50%{
+        opacity: 1;
+        top:36px;
+    }
+    100% {
+        opacity: 0;
+        top:32px;
+    }
 } */
-#game-area #topc34{
-    z-index: 1;
+#game-area #phone {
+    position: absolute;
+    top: 100%;
+    z-index: 999999;
 }
-#game-area #topc35{
-    z-index: 2;
-}
-#game-area #topc36{
-    z-index: 3;
-}
-#game-area #topc36{
-    z-index: 4;
-}
-#game-area #topc37{
-    z-index: 5;
-}
-#game-area #topc38{
-    z-index: 6;
-}
-
-#game-area #card3container{
-    animation: handanim1 2s  infinite;
-    width: 43px;
-    margin: 0 auto;
-    top: 185px;
-    left: 140px;
-}
-@keyframes handanim1{
-    0%   {top: 185px;}
-    50% { top: 209px;}
-    100%  {top: 185px;}
-    
+#game-area #phone img{
+    width: 100%;
 }
