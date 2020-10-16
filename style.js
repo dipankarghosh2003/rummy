@@ -128,7 +128,7 @@ function animateinCorrectCard(){
         $("#game-area .msg").html("Tap to Drop the Invalid Card");
         $("#game-area #showhand").css({display:'block'});
         $("#game-area #showhand").css({left:'170px',top:'111px',transform:'rotate(26deg)'});
-    //$("#game-area #topc4").addClass("animateIncorrectCard");
+    $("#game-area #topc4").addClass("animateIncorrectCard");
     dropinvalidcard=1;
     $("#clickableareaforinvalidcard").css({display:'block'})
     },1000)
@@ -246,7 +246,7 @@ function nfinal(){
 
 function nxfinal(){
     $("#game-area .msg").css({"font-size":"18px"});
-    $("#game-area .msg").html("Guiness Record for <br/> Worlds Biggest Rummy Tournament");
+    $("#game-area .msg").html("Guinness Record for <br/> World&#39;s Biggest Rummy Tournament");
     $("#game-area #confetti3").addClass("animateConfetti1");
     setTimeout(function(){
         $("#game-area #confetti3").hide();
