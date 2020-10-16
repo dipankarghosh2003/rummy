@@ -92,14 +92,14 @@ function tapToPick(){
     $("#game-area #card1").addClass("animateCards");
     tappedCardDeck=1;
     setTimeout(function(){
-        $("#game-area #showhand").css({display:'none'});console.log("ini")
+        $("#game-area #showhand").css({display:'none'});
     },3000)
     
 }
 function flip() {
     
     $('#game-area .carddef').addClass('flipped');;
-    $("#game-area #showhand").css({left:'170px'});
+    $("#game-area #showhand").css({left:'182px'});
     setTimeout(function(){
         $("#game-area .msg").html("Tap to Complete the Sequence");
         tappedCardDeck=2;
@@ -116,7 +116,7 @@ function flip() {
 }
 function moveCardFromdeck(){
     console.log("onside it")
-    $("#game-area .container").animate({left:"91px"},"slow",function(){
+    $("#game-area .container").animate({left:"111px"},"slow",function(){
         $("#game-area .msg").html("");
         flip();
         
@@ -141,7 +141,7 @@ function deleteWrongCard(){
     console.log("delete it")
     $("#game-area #topc4").removeClass("animateIncorrectCard");
     
-    $('#game-area #topc4').delay(00).animate({left:"162px",top:"-87px",width:"43px"}, {
+    $('#game-area #topc4').delay(00).animate({left:"183",top:"-83px",width:"43px"}, {
         step: function(now,fx) {
           $(this).css('-webkit-transform','rotate(0deg)'); 
           $(this).css('-moz-transform','rotate(0deg)');
@@ -181,7 +181,7 @@ function nextAnim(){
     setTimeout(function(){
         //$("#game-area #confetti3").addClass("animateConfetti")
         $("#game-area .msg").html("");
-        $('#game-area #topc4').css({transform:"rotate(14deg)",left:"175px",top:"15px",width:"84px"});
+        $('#game-area #topc4').css({transform:"rotate(14deg)",left:"183px",top:"15px",width:"84px"});
         $("#game-area #correctcard").hide();
         $("#game-area #pileofcard").hide()
         $("#game-area #invalidcard").hide();
